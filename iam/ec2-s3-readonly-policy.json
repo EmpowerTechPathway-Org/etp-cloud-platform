@@ -1,1 +1,15 @@
 Week2: Add S3 read-only IAM policy
+/iam/ec2-s3-readonly-policy.json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": [
+        "arn:aws:s3:::example-etp-bucket",
+        "arn:aws:s3:::example-etp-bucket/*"
+      ]
+    }
+  ]
+}
