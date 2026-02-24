@@ -40,3 +40,44 @@ This conceptual architecture illustrates a **public EC2 deployment** with minima
 ---
 
 ## ASCII Diagram
+
++-------------------------------+
+|          VPC: 10.0.0.0/16     |
+|                               |
+|  +-------------------------+  |
+|  | Public Subnet 10.0.1.0/24| |
+|  | +---------------------+ |  |
+|  | | EC2 Instance t2.micro| | |
+|  | | Security Group: SSH  | | |
+|  | | 22 from My IP only   | | |
+|  | +---------------------+ |  |
+|  +-------------------------+  |
+|        |                         |
+|        v                         |
+|   Internet Gateway (IGW)         |
++-------------------------------+
+
+## Traffic Flow
+- **Inbound:** Only SSH/HTTP from My IP  
+- **Outbound:** All traffic allowed (default)  
+- **Zero-Trust Principle:** Assume all network traffic is untrusted; enforce strict access rules  
+
+---
+
+## Security Boundaries
+- VPC isolates resources from other AWS tenants  
+- Security group enforces host-level access controls  
+- Public subnet allows minimal exposure for testing purposes  
+- IAM user access limited by least privilege  
+
+---
+
+## Zero-Trust Notes
+- Never use root account for EC2 management  
+- Enable MFA for all IAM users  
+- Limit security group access to known IPs  
+- Monitor CloudTrail and CloudWatch logs for anomalies  
+
+---
+
+**End of Architecture Documentation**
