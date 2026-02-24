@@ -1,2 +1,1 @@
-# Week 2 EC2 Deployment Runbook
-This document explains how to deploy an EC2 instance.
+Week2: Add EC2 deployment runbook
