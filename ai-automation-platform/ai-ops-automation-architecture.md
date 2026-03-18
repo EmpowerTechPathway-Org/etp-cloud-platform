@@ -29,3 +29,20 @@ Summarizes operational notes and system events to produce draft incident and out
 AI Knowledge Assistant
 Provides instant answers to operational questions by querying internal documentation, reducing time spent searching for known issues and improving resolution speed for clinical and IT systems.
 
+
+## 5. High-Level Architecture
+
+The Northstar AI Operations Automation Platform is built using a cloud-native, serverless design to simplify management and scale with demand.
+
+User and system requests enter through an API Gateway, which routes traffic to serverless compute functions. These functions call the AI processing layer to perform ticket classification, incident summarization, or knowledge retrieval.
+
+Processed results are saved in cloud storage, logged for auditing, and presented to IT staff via dashboards or ticket updates, enabling faster decision-making and automated workflows.
+
+### Core Components
+
+- API Gateway: Handles incoming requests and routes them to the appropriate service.
+- Serverless Compute: Executes business logic without managing servers.
+- AI Processing Service: Performs classification, summarization, and knowledge retrieval.
+- Data Storage: Stores tickets, incident summaries, and AI outputs.
+- Logging & Monitoring: Tracks system activity and performance for observability.
+- Operational Dashboard: Displays results and insights to IT operations staff.
