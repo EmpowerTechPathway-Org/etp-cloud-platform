@@ -1,0 +1,24 @@
+Northstar Regional Health AI Operations Platform
+
+User / Ticketing System
+        |
+        v
+   API Gateway
+        |
+        v
+Serverless Compute
+        |
+        v
+    AI Service
+        |
+ -------------------------
+ |           |           |
+ v           v           v
+Ticket    Incident    Knowledge
+Classifier Summary     Assistant
+        |
+        v
+ Storage / Logging / Monitoring
+        |
+        v
+   Operations Dashboard
