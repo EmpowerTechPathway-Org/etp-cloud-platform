@@ -46,3 +46,29 @@ Processed results are saved in cloud storage, logged for auditing, and presented
 - Data Storage: Stores tickets, incident summaries, and AI outputs.
 - Logging & Monitoring: Tracks system activity and performance for observability.
 - Operational Dashboard: Displays results and insights to IT operations staff.
+
+  ## 6. Security and Zero Trust Considerations
+
+- Role-based access control for all services
+- Least privilege permissions
+- Secrets stored in a secrets manager
+- Encryption for data at rest and in transit
+- Logging and monitoring of API activity
+- Isolation of development and production environments
+
+## 7. Operational Benefits
+
+Using fictional assumptions:
+
+- 450 tickets per week
+- 3 minutes manual classification per ticket
+
+AI ticket classification could reduce triage time by over 50%.
+
+Incident summary generation could reduce documentation time by half.
+
+Knowledge retrieval could reduce time engineers spend searching documentation.
+
+## 8. Conclusion
+
+This project demonstrates how a fictional healthcare organization could deploy an AI-assisted operations automation platform using cloud-native services. The architecture shows how AI could assist IT teams in reducing repetitive operational tasks while maintaining strong security practices.
