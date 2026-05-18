@@ -71,5 +71,5 @@ Knowledge retrieval could reduce time engineers spend searching documentation.
 
 ## 8. Conclusion
 
-This project demonstrates how a fictional healthcare organization could deploy an AI-assisted operations automation platform using cloud-native services. The architecture shows how AI could assist IT teams in reducing repetitive operational tasks while maintaining strong security practices.
+This project demonstrates how a fictional healthcare organization could deploy an AI-assisted operations automation platform using cloud-native services. The architecture shows how AI could assist IT teams in reducing repetitive operational tasks while maintaining strong security practices
 
